@@ -9,7 +9,7 @@ function App() {
 		results: [],
 		selected: {}
 	});
-	const apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=d320527f";
+	const apiUrl = "https://www.omdbapi.com/?i=tt3896198&apikey=d320527f";
 	const search = e => {
 		if (e.key === "Enter") {
 			axios(apiUrl + "&s=" + state.s).then(({ data }) => {
